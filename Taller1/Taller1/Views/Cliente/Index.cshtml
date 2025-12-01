@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Taller1.Models.Cliente>
+
+<h2>Lista de Clientes</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear nuevo cliente</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Documento</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <td>@cliente.Nombre</td>
+                <td>@cliente.Documento</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@cliente.ClienteId" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@cliente.ClienteId" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+﻿@model Taller1.Models.Cliente
+
+<h2>Eliminar Cliente</h2>
+
+<div>
+    <h4>Nombre: @Model.Nombre</h4>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="ClienteId" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+

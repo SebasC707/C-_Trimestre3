@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\crudnativo\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|solutionrelative:controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\crudnativo\\views\\producto\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|solutionrelative:views\\producto\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\crudnativo\\views\\producto\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|solutionrelative:views\\producto\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\crudnativo\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|solutionrelative:models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\crudnativo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\crudnativo\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC81ECC5-EC8D-449A-9474-0D212848E437}|CrudNativo.csproj|solutionrelative:views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "Controllers\\ProductoController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwDAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:45:20.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\Views\\Producto\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producto\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\Views\\Producto\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Producto\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T20:41:45.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\Models\\Producto.cs",
+              "RelativeToolTip": "Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:37:34.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-10T20:29:14.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\Views\\Producto\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producto\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\Views\\Producto\\Index.cshtml",
+              "RelativeToolTip": "Views\\Producto\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T21:53:02.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\Views\\Producto\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producto\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\CrudNativo\\Views\\Producto\\Create.cshtml",
+              "RelativeToolTip": "Views\\Producto\\Create.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T21:52:32.887Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

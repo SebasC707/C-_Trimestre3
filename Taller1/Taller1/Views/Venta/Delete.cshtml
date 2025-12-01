@@ -1,0 +1,15 @@
+﻿@model Taller1.Models.Venta
+
+<h2>Eliminar Venta</h2>
+
+<div>
+    <p>Cliente: @Model.Cliente.Nombre</p>
+    <p>Fecha: @Model.Fecha.ToShortDateString()</p>
+    <p>Total: @Model.Total.ToString("C")</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="VentaId" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

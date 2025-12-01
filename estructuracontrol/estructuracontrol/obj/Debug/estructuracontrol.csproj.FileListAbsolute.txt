@@ -1,0 +1,7 @@
+C:\Users\Sena\source\repos\ficha-3147912\estructuracontrol\estructuracontrol\obj\Debug\estructuracontrol.csproj.AssemblyReference.cache
+C:\Users\Sena\source\repos\ficha-3147912\estructuracontrol\estructuracontrol\obj\Debug\estructuracontrol.csproj.CoreCompileInputs.cache
+C:\Users\Sena\source\repos\ficha-3147912\estructuracontrol\estructuracontrol\bin\Debug\estructuracontrol.exe.config
+C:\Users\Sena\source\repos\ficha-3147912\estructuracontrol\estructuracontrol\bin\Debug\estructuracontrol.exe
+C:\Users\Sena\source\repos\ficha-3147912\estructuracontrol\estructuracontrol\bin\Debug\estructuracontrol.pdb
+C:\Users\Sena\source\repos\ficha-3147912\estructuracontrol\estructuracontrol\obj\Debug\estructuracontrol.exe
+C:\Users\Sena\source\repos\ficha-3147912\estructuracontrol\estructuracontrol\obj\Debug\estructuracontrol.pdb

@@ -1,0 +1,396 @@
+﻿@model TechNova.Models.Venta
+@{
+    ViewData["Title"] = "Nueva Venta";
+}
+
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col-md-8">
+            <h1><i class="bi bi-cart-plus"></i> Registrar Nueva Venta</h1>
+        </div>
+        <div class="col-md-4 text-end">
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Volver
+            </a>
+        </div>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle"></i> @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-dark text-white">
+            <h5 class="mb-0"><i class="bi bi-pencil-square"></i> Información de la Venta</h5>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create" method="post" id="ventaForm">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <!-- CLIENTE -->
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Cliente *</label>
+                    <select name="ClienteId" id="clienteSelect" class="form-select" required>
+                        <option value="">-- Seleccione un cliente --</option>
+                        @foreach (var cliente in ViewData["ClienteId"] as SelectList)
+                        {
+                            <option value="@cliente.Value">@cliente.Text</option>
+                        }
+                    </select>
+                    <span class="text-danger" id="clienteError"></span>
+                </div>
+
+                <hr />
+
+                <h5><i class="bi bi-box-seam"></i> Productos en la Venta</h5>
+
+                <!-- TABLA DE PRODUCTOS -->
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th style="width: 35%">Producto</th>
+                                <th style="width: 12%" class="text-center">Stock Disp.</th>
+                                <th style="width: 13%" class="text-center">Precio Unit.</th>
+                                <th style="width: 13%" class="text-center">Cantidad</th>
+                                <th style="width: 15%" class="text-center">Subtotal</th>
+                                <th style="width: 12%" class="text-center">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productosContainer">
+                            <tr class="producto-item">
+                                <td>
+                                    <select name="ProductoIds" class="form-select form-select-sm producto-select" required>
+                                        <option value="">-- Seleccione producto --</option>
+                                        @foreach (var producto in ViewData["Productos"] as SelectList)
+                                        {
+                                            <option value="@producto.Value">@producto.Text</option>
+                                        }
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm text-center stock-display" readonly placeholder="--">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm text-end precio-display" readonly placeholder="$0.00">
+                                </td>
+                                <td>
+                                    <input type="number" name="Cantidades" class="form-control form-control-sm text-center cantidad-input" min="1" value="1" required />
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-sm text-end fw-bold subtotal-display" readonly placeholder="$0.00">
+                                </td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-danger btn-sm btn-eliminar" onclick="eliminarProducto(this)" disabled>
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="table-success">
+                                <td colspan="4" class="text-end fw-bold fs-5">TOTAL DE LA VENTA:</td>
+                                <td colspan="2" class="text-center">
+                                    <span id="totalGeneral" class="fs-4 fw-bold text-success">$0.00</span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <!-- BOTÓN AGREGAR PRODUCTO -->
+                <button type="button" class="btn btn-outline-primary mb-3" onclick="agregarProducto()">
+                    <i class="bi bi-plus-circle"></i> Agregar Otro Producto
+                </button>
+
+                <hr />
+
+                <div class="text-end">
+                    <button type="submit" class="btn btn-success btn-lg">
+                        <i class="bi bi-check-circle"></i> Registrar Venta
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary btn-lg">
+                        <i class="bi bi-x-circle"></i> Cancelar
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Objeto para almacenar info de productos
+        let productosInfo = {};
+
+        // Cargar información de productos al iniciar
+        document.addEventListener('DOMContentLoaded', function() {
+            const primeraFila = document.querySelector('.producto-item');
+            configurarEventosProducto(primeraFila);
+        });
+
+        // Función para agregar un nuevo producto
+        function agregarProducto() {
+            const container = document.getElementById('productosContainer');
+            const primeraFila = container.querySelector('.producto-item');
+            const nuevaFila = primeraFila.cloneNode(true);
+
+            // Limpiar los valores de la nueva fila
+            nuevaFila.querySelector('.producto-select').value = '';
+            nuevaFila.querySelector('.stock-display').value = '';
+            nuevaFila.querySelector('.precio-display').value = '';
+            nuevaFila.querySelector('.cantidad-input').value = '1';
+            nuevaFila.querySelector('.subtotal-display').value = '';
+            nuevaFila.querySelector('.btn-eliminar').disabled = false;
+
+            container.appendChild(nuevaFila);
+
+            // Agregar eventos a la nueva fila
+            configurarEventosProducto(nuevaFila);
+        }
+
+        // Función para eliminar un producto
+        function eliminarProducto(btn) {
+            const filas = document.querySelectorAll('.producto-item');
+            if (filas.length > 1) {
+                btn.closest('.producto-item').remove();
+                calcularTotal();
+            } else {
+                alert('Debe mantener al menos un producto en la venta');
+            }
+        }
+
+        // Configurar eventos para cada fila de producto
+        function configurarEventosProducto(fila) {
+            const select = fila.querySelector('.producto-select');
+            const cantidad = fila.querySelector('.cantidad-input');
+
+            select.addEventListener('change', function() {
+                obtenerDatosProducto(fila);
+            });
+
+            cantidad.addEventListener('input', function() {
+                validarCantidad(fila);
+                actualizarSubtotal(fila);
+            });
+
+            cantidad.addEventListener('blur', function() {
+                validarCantidad(fila);
+            });
+        }
+
+        // Obtener datos del producto mediante AJAX
+        async function obtenerDatosProducto(fila) {
+            const select = fila.querySelector('.producto-select');
+            const productoId = select.value;
+            const stockDisplay = fila.querySelector('.stock-display');
+            const precioDisplay = fila.querySelector('.precio-display');
+            const cantidadInput = fila.querySelector('.cantidad-input');
+
+            if (!productoId) {
+                stockDisplay.value = '';
+                precioDisplay.value = '';
+                cantidadInput.max = '';
+                actualizarSubtotal(fila);
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/productos/${productoId}`);
+
+                if (response.ok) {
+                    const producto = await response.json();
+
+                    stockDisplay.value = producto.stock;
+                    precioDisplay.value = '$' + producto.precio.toFixed(2);
+                    cantidadInput.max = producto.stock;
+
+                    // Guardar en cache
+                    productosInfo[productoId] = {
+                        nombre: producto.nombre,
+                        stock: producto.stock,
+                        precio: producto.precio,
+                        cargado: true
+                    };
+
+                    // Si la cantidad actual excede el stock, ajustarla
+                    if (parseInt(cantidadInput.value) > producto.stock) {
+                        cantidadInput.value = producto.stock;
+                    }
+
+                    // Cambiar color según stock
+                    stockDisplay.classList.remove('text-danger', 'text-warning', 'text-success', 'fw-bold');
+                    if (producto.stock < 5) {
+                        stockDisplay.classList.add('text-danger', 'fw-bold');
+                    } else if (producto.stock < 20) {
+                        stockDisplay.classList.add('text-warning', 'fw-bold');
+                    } else {
+                        stockDisplay.classList.add('text-success', 'fw-bold');
+                    }
+                } else {
+                    console.error('Error al obtener datos del producto');
+                    alert('No se pudo cargar la información del producto');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error de conexión al cargar el producto');
+            }
+
+            actualizarSubtotal(fila);
+        }
+
+        // Validar cantidad contra stock
+        function validarCantidad(fila) {
+            const select = fila.querySelector('.producto-select');
+            const cantidadInput = fila.querySelector('.cantidad-input');
+            const productoId = select.value;
+
+            if (productoId && productosInfo[productoId] && productosInfo[productoId].cargado) {
+                const stock = productosInfo[productoId].stock;
+                const cantidad = parseInt(cantidadInput.value);
+
+                if (cantidad > stock) {
+                    alert(`⚠️ Stock insuficiente. Solo hay ${stock} unidades disponibles`);
+                    cantidadInput.value = stock;
+                } else if (cantidad < 1 || isNaN(cantidad)) {
+                    cantidadInput.value = 1;
+                }
+            }
+        }
+
+        // Actualizar subtotal de una fila
+        function actualizarSubtotal(fila) {
+            const select = fila.querySelector('.producto-select');
+            const productoId = select.value;
+            const cantidadInput = fila.querySelector('.cantidad-input');
+            const subtotalDisplay = fila.querySelector('.subtotal-display');
+            const precioDisplay = fila.querySelector('.precio-display');
+
+            if (productoId && productosInfo[productoId] && productosInfo[productoId].cargado) {
+                const precio = productosInfo[productoId].precio;
+                const cantidad = parseInt(cantidadInput.value) || 0;
+                const subtotal = precio * cantidad;
+
+                subtotalDisplay.value = '$' + subtotal.toFixed(2);
+            } else if (precioDisplay.value) {
+                const precio = parseFloat(precioDisplay.value.replace('$', ''));
+                const cantidad = parseInt(cantidadInput.value) || 0;
+                const subtotal = precio * cantidad;
+                subtotalDisplay.value = '$' + subtotal.toFixed(2);
+            } else {
+                subtotalDisplay.value = '';
+            }
+
+            calcularTotal();
+        }
+
+        // Calcular total general
+        function calcularTotal() {
+            let total = 0;
+            const subtotales = document.querySelectorAll('.subtotal-display');
+
+            subtotales.forEach(subtotal => {
+                if (subtotal.value) {
+                    const valor = parseFloat(subtotal.value.replace('$', ''));
+                    if (!isNaN(valor)) {
+                        total += valor;
+                    }
+                }
+            });
+
+            document.getElementById('totalGeneral').textContent = '$' + total.toFixed(2);
+        }
+
+        // Validación antes de enviar el formulario
+        document.getElementById('ventaForm').addEventListener('submit', function(e) {
+            // Validar cliente
+            const clienteId = document.getElementById('clienteSelect').value;
+            if (!clienteId) {
+                e.preventDefault();
+                document.getElementById('clienteError').textContent = 'Debe seleccionar un cliente';
+                alert('❌ Debe seleccionar un cliente');
+                return false;
+            }
+
+            // Validar que hay al menos un producto seleccionado
+            const productos = document.querySelectorAll('.producto-select');
+            let hayProductoSeleccionado = false;
+
+            productos.forEach(select => {
+                if (select.value) {
+                    hayProductoSeleccionado = true;
+                }
+            });
+
+            if (!hayProductoSeleccionado) {
+                e.preventDefault();
+                alert('❌ Debe seleccionar al menos un producto para la venta');
+                return false;
+            }
+
+            // Validar que todos los productos seleccionados tengan cantidad válida
+            let errorStock = false;
+            document.querySelectorAll('.producto-item').forEach(fila => {
+                const select = fila.querySelector('.producto-select');
+                const productoId = select.value;
+
+                if (productoId && productosInfo[productoId] && productosInfo[productoId].cargado) {
+                    const stock = productosInfo[productoId].stock;
+                    const cantidad = parseInt(fila.querySelector('.cantidad-input').value);
+
+                    if (cantidad > stock) {
+                        errorStock = true;
+                        alert(`❌ El producto "${productosInfo[productoId].nombre}" no tiene suficiente stock. Disponible: ${stock}`);
+                    }
+                }
+            });
+
+            if (errorStock) {
+                e.preventDefault();
+                return false;
+            }
+
+            return true;
+        });
+    </script>
+
+    <style>
+        .table thead th {
+            vertical-align: middle;
+        }
+        .table tbody td {
+            vertical-align: middle;
+        }
+        .stock-display {
+            font-weight: 600;
+        }
+        .stock-display.text-danger {
+            background-color: #fff5f5;
+        }
+        .stock-display.text-warning {
+            background-color: #fffbf0;
+        }
+        .stock-display.text-success {
+            background-color: #f0fff4;
+        }
+        .subtotal-display {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .table-success td {
+            background-color: #d4edda !important;
+            font-size: 1.1rem;
+        }
+        #totalGeneral {
+            font-size: 1.5rem !important;
+        }
+    </style>
+}

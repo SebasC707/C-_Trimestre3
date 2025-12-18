@@ -1,0 +1,50 @@
+﻿@model TechNova.Models.DetalleVenta
+
+@{
+    ViewData["Title"] = "Detalles del Detalle de Venta";
+}
+
+<h1 class="mb-4">Detalles del Detalle de Venta</h1>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h4 class="card-title mb-3">Información</h4>
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-3 fw-bold text-secondary">
+                @Html.DisplayNameFor(model => model.Cantidad)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Cantidad)
+            </dd>
+
+            <dt class="col-sm-3 fw-bold text-secondary">
+                @Html.DisplayNameFor(model => model.PrecioUnitario)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.PrecioUnitario)
+            </dd>
+
+            <dt class="col-sm-3 fw-bold text-secondary">
+                @Html.DisplayNameFor(model => model.Producto)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Producto.ProductoId)
+            </dd>
+
+            <dt class="col-sm-3 fw-bold text-secondary">
+                @Html.DisplayNameFor(model => model.Venta)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Venta.VentaId)
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<div class="mt-4">
+    <a asp-action="Index" class="btn btn-secondary">
+        ← Regresar a la lista
+    </a>
+</div>

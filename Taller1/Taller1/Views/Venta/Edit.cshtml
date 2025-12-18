@@ -1,0 +1,49 @@
+﻿@model Taller1.Models.Venta
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+<h2>Editar Venta</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="VentaId" />
+    <div class="form-group mb-3">
+        <label>Cliente</label>
+        <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.Clientes"></select>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Fecha">Fecha</label>
+        <input asp-for="Fecha" type="date" class="form-control" />
+    </div>
+
+    <h4>Productos</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var producto in ViewBag.Productos)
+            {
+                var detalle = Model.VentaProductos?.FirstOrDefault(vp => vp.ProductoId == producto.ProductoId);
+                <tr>
+                    <td>
+                        <input type="hidden" name="ProductoId" value="@producto.ProductoId" />
+                        @producto.Nombre
+                    </td>
+                    <td>
+                        <input type="number" name="Cantidad" class="form-control" value="@(detalle?.Cantidad ?? 0)" min="0" />
+                    </td>
+                    <td>
+                        <input type="number" name="PrecioUnitario" class="form-control" value="@(detalle?.PrecioUnitario ?? producto.Precio)" step="0.01" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

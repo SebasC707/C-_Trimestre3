@@ -1,0 +1,430 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\producto\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\producto\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\cliente\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\cliente\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\models\\ventaproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\models\\ventaproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\taller1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\taller1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\producto\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\producto\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\producto\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\producto\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\venta\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\venta\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\venta\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\venta\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\venta\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\venta\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\views\\venta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\views\\venta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|c:\\users\\sena\\source\\repos\\ficha-3147912\\taller1\\taller1\\migrations\\20251110212042_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B4CE28-DCC8-4A5E-92AA-16B3CB0F5DB8}|Taller1\\Taller1.csproj|solutionrelative:taller1\\migrations\\20251110212042_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Cliente\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Cliente\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Cliente\\Edit.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Cliente\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:33:49.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Taller1\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Taller1\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAYwFcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T21:24:45.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VentaProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Models\\VentaProducto.cs",
+              "RelativeDocumentMoniker": "Taller1\\Models\\VentaProducto.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Models\\VentaProducto.cs",
+              "RelativeToolTip": "Taller1\\Models\\VentaProducto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T21:06:32.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Venta.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Models\\Venta.cs",
+              "RelativeDocumentMoniker": "Taller1\\Models\\Venta.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Models\\Venta.cs",
+              "RelativeToolTip": "Taller1\\Models\\Venta.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T21:00:24.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Cliente\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Cliente\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Cliente\\Delete.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Cliente\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:34:07.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Producto\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Producto\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Producto\\Delete.cshtml*",
+              "RelativeToolTip": "Taller1\\Views\\Producto\\Delete.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:36:08.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "Taller1\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "Taller1\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAYwE8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T21:28:00.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "Taller1\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Models\\Producto.cs",
+              "RelativeToolTip": "Taller1\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:59:22.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "Taller1\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Models\\Cliente.cs",
+              "RelativeToolTip": "Taller1\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:59:38.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Producto\\Create.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Producto\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Producto\\Create.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Producto\\Create.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:35:47.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Cliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Cliente\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Cliente\\Index.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Cliente\\Index.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:33:06.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Cliente\\Create.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Cliente\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Cliente\\Create.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Cliente\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:33:31.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Taller1",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Taller1.csproj",
+              "RelativeDocumentMoniker": "Taller1\\Taller1.csproj",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Taller1.csproj",
+              "RelativeToolTip": "Taller1\\Taller1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-11T20:58:18.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:37:23.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Taller1\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Taller1\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:57:24.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "VentasController.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Controllers\\VentasController.cs",
+              "RelativeDocumentMoniker": "Taller1\\Controllers\\VentasController.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Controllers\\VentasController.cs",
+              "RelativeToolTip": "Taller1\\Controllers\\VentasController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAYwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T21:30:23.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Producto\\Index.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Producto\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Producto\\Index.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Producto\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:35:25.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Venta\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Venta\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Venta\\Delete.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Venta\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:39:33.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Venta\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Venta\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Venta\\Edit.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Venta\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:39:09.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Venta\\Create.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Venta\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Venta\\Create.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Venta\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:36:53.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Venta\\Index.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Venta\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Venta\\Index.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Venta\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:36:43.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Producto\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Taller1\\Views\\Producto\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Views\\Producto\\Edit.cshtml",
+              "RelativeToolTip": "Taller1\\Views\\Producto\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T21:35:58.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20251110212042_initial.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Migrations\\20251110212042_initial.cs",
+              "RelativeDocumentMoniker": "Taller1\\Migrations\\20251110212042_initial.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Migrations\\20251110212042_initial.cs",
+              "RelativeToolTip": "Taller1\\Migrations\\20251110212042_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T21:20:43.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Program.cs",
+              "RelativeDocumentMoniker": "Taller1\\Program.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\Program.cs",
+              "RelativeToolTip": "Taller1\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:55:23.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\appsettings.json",
+              "RelativeDocumentMoniker": "Taller1\\appsettings.json",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\ficha-3147912\\Taller1\\Taller1\\appsettings.json",
+              "RelativeToolTip": "Taller1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-10T20:53:36.348Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

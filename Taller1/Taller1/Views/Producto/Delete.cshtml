@@ -1,0 +1,16 @@
+﻿@model Taller1.Models.Producto
+
+<h2>Eliminar Producto</h2>
+
+<div>
+    <h4>@Model.Nombre</h4>
+    <p>Precio: @Model.Precio.ToString("C")</p>
+    <p>Cantidad: @Model.Cantidad</p>
+    <p>Fecha Creación: @Model.FechaCreacion.ToShortDateString()</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="ProductoId" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

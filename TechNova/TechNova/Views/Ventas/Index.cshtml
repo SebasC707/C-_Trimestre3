@@ -1,0 +1,45 @@
+﻿@model IEnumerable<TechNova.Models.Venta>
+
+@{
+    ViewData["Title"] = "Ventas";
+}
+
+<h1 class="mt-3">Ventas</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Registrar Venta</a>
+</p>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaVenta)
+            </th>
+            <th>
+                Cliente
+            </th>
+            <th>
+                Acciones
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.FechaVenta.ToString("yyyy-MM-dd HH:mm")
+                </td>
+                <td>
+                    @item.Cliente.Nombre
+                </td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.VentaId">
+                        Detalles
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

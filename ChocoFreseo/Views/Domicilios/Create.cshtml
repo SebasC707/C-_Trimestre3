@@ -1,0 +1,215 @@
+﻿@using ChocoFreseo.Models.ViewModels
+@model DomicilioCreateViewModel
+
+@{
+    ViewData["Title"] = "Crear domicilio";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+        <h1 class="mb-0">Nuevo domicilio</h1>
+        <p class="text-muted mb-0">Asigna repartidor, zona y dirección para el pedido.</p>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Columna izquierda: info del pedido + formulario -->
+    <div class="col-12 col-lg-5 mb-3">
+        @* Resumen del pedido *@
+        @if (Model?.Pedido != null && Model.Cliente != null)
+        {
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="mb-1">Pedido #@Model.Pedido.Id</h5>
+                    <p class="mb-1"><strong>Cliente:</strong> @Model.Cliente.NombreCompleto</p>
+                    <p class="mb-1"><strong>Fecha:</strong> @Model.Pedido.FechaPedido.ToString("g")</p>
+                    <p class="mb-0"><strong>Total:</strong> @Model.Pedido.Total.ToString("C")</p>
+                </div>
+            </div>
+        }
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="mb-3">Datos del domicilio</h5>
+
+                <form asp-action="Create" method="post">
+                    @* Mantener el PedidoId *@
+                    <input type="hidden" asp-for="PedidoId" />
+
+                    <div asp-validation-summary="All" class="text-danger mb-2"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="DireccionClienteId" class="form-label">Dirección del cliente</label>
+                        <select asp-for="DireccionClienteId" class="form-select" id="DireccionClienteId"
+                                asp-items="Model.DireccionesCliente">
+                            <option value="">-- Selecciona una dirección --</option>
+                        </select>
+                        <span asp-validation-for="DireccionClienteId" class="text-danger"></span>
+                        <small id="direccionSeleccionadaTexto" class="text-muted d-block mt-1"></small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ZonaEntregaId" class="form-label">Zona de entrega</label>
+                        <select asp-for="ZonaEntregaId" class="form-select" id="ZonaEntregaId"
+                                asp-items="Model.ZonasEntrega">
+                            <option value="">-- Selecciona una zona --</option>
+                        </select>
+                        <span asp-validation-for="ZonaEntregaId" class="text-danger"></span>
+                        <small id="tiempoEstimadoLabel" class="text-muted d-block mt-1"></small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="RepartidorId" class="form-label">Repartidor</label>
+                        <select asp-for="RepartidorId" class="form-select"
+                                asp-items="Model.Repartidores">
+                            <option value="">-- Selecciona un repartidor --</option>
+                        </select>
+                        <span asp-validation-for="RepartidorId" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="CostoDomicilio" class="form-label">Costo del domicilio</label>
+                        <input asp-for="CostoDomicilio" class="form-control" />
+                        <span asp-validation-for="CostoDomicilio" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Propina" class="form-label">Propina (opcional)</label>
+                        <input asp-for="Propina" class="form-control" />
+                        <span asp-validation-for="Propina" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Notas" class="form-label">Notas para el repartidor</label>
+                        <textarea asp-for="Notas" class="form-control" rows="3"
+                                  placeholder="Ej: tocar el timbre, llamar al llegar, etc."></textarea>
+                        <span asp-validation-for="Notas" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">Guardar domicilio</button>
+                        <a asp-action="Index" class="btn btn-secondary">Volver</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Columna derecha: mapa -->
+    <div class="col-12 col-lg-7 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="mb-2">Mapa del domicilio</h5>
+                <p class="text-muted mb-2">
+                    Se muestra el origen (tienda) y el destino según la dirección seleccionada.
+                </p>
+                <div id="map-domicilio" style="height: 420px; border-radius: 10px; border: 2px solid #E53935;"></div>
+                <small class="text-muted d-block mt-2">
+                    La ruta es referencial. El repartidor puede usar la app de mapas de su preferencia.
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Coordenadas de la tienda ChocoFreseo (ajusta a tu ubicación real)
+        var tiendaLat = 3.4516;   // Ej: Cali
+        var tiendaLng = -76.5320;
+
+        // Datos de direcciones y zonas enviados desde el controlador
+        // En el controlador (GET Create) puedes usar:
+        // ViewBag.DireccionesCoordsJson = JsonSerializer.Serialize(direcciones.Select(d => new { id = d.Id, lat = d.Latitud, lng = d.Longitud, texto = d.Barrio + " - " + d.Calle + " " + d.Numero }));
+        // ViewBag.ZonasDatosJson = JsonSerializer.Serialize(zonas.Select(z => new { id = z.Id, nombre = z.NombreZona, minutos = z.TiempoEstimadoMinutos }));
+        var direccionesData = @Html.Raw(ViewBag.DireccionesCoordsJson ?? "[]");
+        var zonasData = @Html.Raw(ViewBag.ZonasDatosJson ?? "[]");
+
+        var direccionesDic = {};
+        direccionesData.forEach(d => {
+            direccionesDic[d.id] = d;
+        });
+
+        var zonasDic = {};
+        zonasData.forEach(z => {
+            zonasDic[z.id] = z;
+        });
+
+        // Inicializar mapa
+        var map = L.map('map-domicilio').setView([tiendaLat, tiendaLng], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        // Marcador tienda
+        var markerTienda = L.marker([tiendaLat, tiendaLng], { title: 'ChocoFreseo' })
+            .addTo(map)
+            .bindPopup('ChocoFreseo (Tienda)')
+            .openPopup();
+
+        // Marcador destino (dirección cliente)
+        var markerDestino = null;
+
+        function actualizarDestino() {
+            var selectDir = document.getElementById('DireccionClienteId');
+            var idDir = parseInt(selectDir.value);
+
+            var textoLabel = document.getElementById('direccionSeleccionadaTexto');
+            textoLabel.textContent = "";
+
+            if (!idDir || !direccionesDic[idDir] || !direccionesDic[idDir].lat || !direccionesDic[idDir].lng) {
+                if (markerDestino) {
+                    map.removeLayer(markerDestino);
+                    markerDestino = null;
+                }
+                return;
+            }
+
+            var info = direccionesDic[idDir];
+            var lat = info.lat;
+            var lng = info.lng;
+
+            if (markerDestino) {
+                markerDestino.setLatLng([lat, lng]);
+            } else {
+                markerDestino = L.marker([lat, lng], { title: 'Destino' }).addTo(map);
+            }
+
+            // Popup con texto bonito
+            markerDestino.bindPopup(info.texto || 'Dirección cliente').openPopup();
+
+            // Ajustar el mapa para ver tienda + destino
+            var bounds = L.latLngBounds([ [tiendaLat, tiendaLng], [lat, lng] ]);
+            map.fitBounds(bounds, { padding: [30, 30] });
+
+            // Mostrar texto debajo del select
+            textoLabel.textContent = info.texto;
+        }
+
+        function actualizarZona() {
+            var selectZona = document.getElementById('ZonaEntregaId');
+            var idZona = parseInt(selectZona.value);
+            var label = document.getElementById('tiempoEstimadoLabel');
+
+            if (idZona && zonasDic[idZona]) {
+                var minutos = zonasDic[idZona].minutos;
+                label.textContent = "Tiempo estimado de entrega: " + minutos + " min aprox.";
+            } else {
+                label.textContent = "";
+            }
+        }
+
+        // Eventos
+        document.getElementById('DireccionClienteId').addEventListener('change', actualizarDestino);
+        document.getElementById('ZonaEntregaId').addEventListener('change', actualizarZona);
+
+        // Por si vienes con valores precargados (edición futura)
+        actualizarDestino();
+        actualizarZona();
+    </script>
+}

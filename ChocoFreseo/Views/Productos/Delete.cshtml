@@ -1,0 +1,41 @@
+﻿@model ChocoFreseo.Models.Domain.Producto
+
+@{
+    ViewData["Title"] = "Eliminar producto";
+}
+
+<div class="row">
+    <div class="col-md-7 col-lg-6">
+        <div class="card border-danger">
+            <div class="card-body">
+                <h2 class="text-danger">Eliminar producto</h2>
+                <p class="text-muted">
+                    ¿Estás seguro de que deseas eliminar este producto del catálogo? Esta acción no se puede deshacer.
+                </p>
+
+                <dl class="row mb-3">
+                    <dt class="col-sm-3">Nombre</dt>
+                    <dd class="col-sm-9">@Model.Nombre</dd>
+
+                    <dt class="col-sm-3">Descripción</dt>
+                    <dd class="col-sm-9">@Model.Descripcion</dd>
+
+                    <dt class="col-sm-3">Precio</dt>
+                    <dd class="col-sm-9">@Model.Precio.ToString("C")</dd>
+
+                    <dt class="col-sm-3">Categoría</dt>
+                    <dd class="col-sm-9">@Model.Categoria</dd>
+
+                    <dt class="col-sm-3">Activo</dt>
+                    <dd class="col-sm-9">@(Model.Activo ? "Sí" : "No")</dd>
+                </dl>
+
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+                    <a asp-action="Index" class="btn btn-secondary ms-2">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

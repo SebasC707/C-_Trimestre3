@@ -1,0 +1,65 @@
+﻿@using ChocoFreseo.Models.Domain
+@model Domicilio
+
+@{
+    ViewData["Title"] = "Eliminar domicilio";
+}
+
+<div class="row">
+    <div class="col-md-8 col-lg-7">
+        <div class="card border-danger">
+            <div class="card-body">
+                <h2 class="text-danger">Eliminar domicilio</h2>
+                <p class="text-muted">
+                    ¿Estás seguro de que deseas eliminar este domicilio? Esta acción no se puede deshacer.
+                </p>
+
+                <dl class="row mb-3">
+                    <dt class="col-sm-3">Pedido</dt>
+                    <dd class="col-sm-9">
+                        Pedido #@Model.PedidoId - @Model.Pedido?.Cliente?.NombreCompleto
+                    </dd>
+
+                    <dt class="col-sm-3">Estado</dt>
+                    <dd class="col-sm-9">@Model.EstadoDomicilio</dd>
+
+                    <dt class="col-sm-3">Dirección</dt>
+                    <dd class="col-sm-9">
+                        @if (Model.DireccionCliente != null)
+                        {
+                            @($"{Model.DireccionCliente.Barrio} - {Model.DireccionCliente.Calle} {Model.DireccionCliente.Numero}")
+                            <br />
+                            <small class="text-muted">@Model.DireccionCliente.Referencia</small>
+                        }
+                        else
+                        {
+                            <span class="text-muted">Sin dirección</span>
+                        }
+                    </dd>
+
+                    <dt class="col-sm-3">Zona</dt>
+                    <dd class="col-sm-9">@Model.ZonaEntrega?.NombreZona</dd>
+
+                    <dt class="col-sm-3">Repartidor</dt>
+                    <dd class="col-sm-9">
+                        @Model.Repartidor?.NombreCompleto ?? "No asignado"
+                    </dd>
+
+                    <dt class="col-sm-3">Costo</dt>
+                    <dd class="col-sm-9">@Model.CostoDomicilio.ToString("C")</dd>
+
+                    <dt class="col-sm-3">Propina</dt>
+                    <dd class="col-sm-9">
+                        @(Model.Propina.HasValue? Model.Propina.Value.ToString("C") : "Sin propina")
+                    </dd>
+                </dl>
+
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+                    <a asp-action="Index" class="btn btn-secondary ms-2">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

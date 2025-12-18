@@ -1,0 +1,193 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString() ?? "";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ChocoAdmin</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ChocoFreseo.styles.css" asp-append-version="true" />
+
+    <!-- Leaflet (mapas) -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="" />
+</head>
+<body class="choco-body">
+
+    <!-- BARRA SUPERIOR FINITA -->
+    <div class="choco-top-bar"></div>
+
+    <!-- CONTENEDOR PRINCIPAL: SIDEBAR + CONTENIDO -->
+    <div class="choco-app d-flex">
+
+        <!-- ===================== SIDEBAR ===================== -->
+        <aside class="choco-sidebar d-flex flex-column">
+
+            <!-- Logo / Marca -->
+            <div class="choco-sidebar-header d-flex align-items-center mb-3">
+                <div class="logo-circle me-2">🍓</div>
+                <div class="d-flex flex-column">
+                    <span class="fw-bold">ChocoFreseo</span>
+                    <small class="text-muted-berry">Panel interno</small>
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <nav class="choco-sidebar-nav flex-grow-1">
+                <ul class="nav flex-column">
+
+                    <!-- Inicio -->
+                    <li class="nav-item mb-1">
+                        <a class="nav-link choco-nav-link @(currentController == "Home" ? "active" : "")"
+                           asp-area="" asp-controller="Home" asp-action="Index">
+                            <span class="icon">🏠</span>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+
+                    <!-- CATÁLOGO -->
+                    <li class="nav-section-title mt-3 mb-1">
+                        Catálogo
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <a class="nav-link choco-nav-link @(currentController == "Productos" ? "active" : "")"
+                           asp-controller="Productos" asp-action="Index">
+                            <span class="icon">🍰</span>
+                            <span>Productos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <a class="nav-link choco-nav-link @(currentController == "Clientes" ? "active" : "")"
+                           asp-controller="Clientes" asp-action="Index">
+                            <span class="icon">🧑‍🤝‍🧑</span>
+                            <span>Clientes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <a class="nav-link choco-nav-link @(currentController == "DireccionClientes" ? "active" : "")"
+                           asp-controller="DireccionClientes" asp-action="Index">
+                            <span class="icon">📍</span>
+                            <span>Direcciones</span>
+                        </a>
+                    </li>
+
+                    <!-- OPERACIÓN -->
+                    <li class="nav-section-title mt-3 mb-1">
+                        Operación
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <a class="nav-link choco-nav-link @(currentController == "Pedidos" ? "active" : "")"
+                           asp-controller="Pedidos" asp-action="Index">
+                            <span class="icon">🧾</span>
+                            <span>Pedidos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <a class="nav-link choco-nav-link @(currentController == "Domicilios" ? "active" : "")"
+                           asp-controller="Domicilios" asp-action="Index">
+                            <span class="icon">🚚</span>
+                            <span>Domicilios</span>
+                        </a>
+                    </li>
+
+                    <!-- LOGÍSTICA -->
+                    <li class="nav-section-title mt-3 mb-1">
+                        Logística
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <a class="nav-link choco-nav-link @(currentController == "Repartidors" ? "active" : "")"
+                           asp-controller="Repartidors" asp-action="Index">
+                            <span class="icon">👷‍♂️</span>
+                            <span>Repartidores</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <a class="nav-link choco-nav-link @(currentController == "ZonaEntregas" ? "active" : "")"
+                           asp-controller="ZonaEntregas" asp-action="Index">
+                            <span class="icon">🗺️</span>
+                            <span>Zonas de entrega</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Pie del sidebar -->
+            <div class="choco-sidebar-footer mt-3">
+                <small class="text-muted-berry d-block">
+                    v1.0 · .NET 10 · MVC
+                </small>
+            </div>
+        </aside>
+
+        <!-- ===================== CONTENIDO ===================== -->
+        <div class="choco-content flex-grow-1 d-flex flex-column">
+
+            <!-- HEADER SUPERIOR DEL CONTENIDO -->
+            <header class="choco-content-header d-flex align-items-center justify-content-between px-3 py-2 border-bottom">
+                <div>
+                    <h6 class="mb-0 text-uppercase text-muted small">
+                        @currentController
+                        @if (!string.IsNullOrEmpty(currentAction) && currentAction != "Index")
+                        {
+                            <span>/ @currentAction</span>
+                        }
+                    </h6>
+                    <span class="fw-semibold">Panel de gestión ChocoFreseo</span>
+                </div>
+                <div class="text-end small text-muted">
+                    @* Aquí podrías mostrar usuario logueado más adelante *@
+                    <span>🍓 Módulo de administración</span>
+                </div>
+            </header>
+
+            <!-- CONTENIDO PRINCIPAL -->
+            <main class="flex-grow-1">
+                <div class="container-fluid py-4">
+                    @RenderBody()
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <footer class="choco-footer mt-auto border-top">
+                <div class="container-fluid d-flex justify-content-between align-items-center py-2 small">
+                    <span>&copy; 2025 - ChocoAdmin</span>
+                    <span>Sistema de pedidos y domicilios hecho con amor 🍓</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Leaflet JS (mapas) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin="">
+    </script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,185 @@
+﻿@using ChocoFreseo.Models.Domain
+@model Domicilio
+
+@{
+    ViewData["Title"] = "Detalle del domicilio";
+    var estadoTexto = Model.EstadoDomicilio.ToString();
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+        <h1 class="mb-0">Detalle del domicilio</h1>
+        <p class="text-muted mb-0">Información del domicilio asociado al pedido #@Model.PedidoId</p>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Columna principal -->
+    <div class="col-lg-7 mb-3">
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                    <div>
+                        <h5 class="mb-1">Pedido #@Model.PedidoId</h5>
+                        <p class="mb-0 text-muted">
+                            <strong>Cliente:</strong> @Model.Pedido?.Cliente?.NombreCompleto
+                        </p>
+                    </div>
+                    @{
+                        string badgeClass = "bg-secondary";
+                        switch (estadoTexto)
+                        {
+                            case "Pendiente":
+                                badgeClass = "bg-warning text-dark";
+                                break;
+                            case "Asignado":
+                                badgeClass = "bg-info text-dark";
+                                break;
+                            case "EnRuta":
+                                badgeClass = "bg-primary";
+                                break;
+                            case "Entregado":
+                                badgeClass = "bg-success";
+                                break;
+                            case "Cancelado":
+                                badgeClass = "bg-danger";
+                                break;
+                        }
+                    }
+                    <span class="badge @badgeClass">@estadoTexto</span>
+                </div>
+
+                <hr />
+
+                <dl class="row mb-0">
+                    <dt class="col-sm-4">Repartidor</dt>
+                    <dd class="col-sm-8">
+                        @if (Model.Repartidor != null)
+                        {
+                            @Model.Repartidor.NombreCompleto
+                        }
+                        else
+                        {
+                            <span class="text-muted">No asignado</span>
+                        }
+                    </dd>
+
+                    <dt class="col-sm-4">Zona de entrega</dt>
+                    <dd class="col-sm-8">
+                        @Model.ZonaEntrega?.NombreZona ?? "Sin zona"
+                    </dd>
+
+                    <dt class="col-sm-4">Dirección</dt>
+                    <dd class="col-sm-8">
+                        @if (Model.DireccionCliente != null)
+                        {
+                            @($"{Model.DireccionCliente.Barrio} - {Model.DireccionCliente.Calle} {Model.DireccionCliente.Numero}")
+                            <br />
+                            <small class="text-muted">@Model.DireccionCliente.Referencia</small>
+                        }
+                        else
+                        {
+                            <span class="text-muted">Sin dirección asociada</span>
+                        }
+                    </dd>
+
+                    <dt class="col-sm-4">Costo domicilio</dt>
+                    <dd class="col-sm-8">@Model.CostoDomicilio.ToString("C")</dd>
+
+                    <dt class="col-sm-4">Propina</dt>
+                    <dd class="col-sm-8">
+                        @(Model.Propina.HasValue? Model.Propina.Value.ToString("C") : "Sin propina")
+                    </dd>
+
+                    <dt class="col-sm-4">Notas</dt>
+                    <dd class="col-sm-8">
+                        @(string.IsNullOrWhiteSpace(Model.Notas) ? "Sin notas" : Model.Notas)
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <!-- Línea de tiempo simple -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="mb-3">Línea de tiempo</h5>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2">
+                        <strong>Solicitud:</strong> @Model.HoraSolicitud.ToString("g")
+                    </li>
+                    <li class="mb-2">
+                        <strong>Asignación:</strong>
+                        @(Model.HoraAsignacion?.ToString("g") ?? "Pendiente")
+                    </li>
+                    <li class="mb-2">
+                        <strong>Salida:</strong>
+                        @(Model.HoraSalida?.ToString("g") ?? "Pendiente")
+                    </li>
+                    <li>
+                        <strong>Entrega:</strong>
+                        @(Model.HoraEntrega?.ToString("g") ?? "Pendiente")
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Columna lateral -->
+    <div class="col-lg-5 mb-3">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="mb-2">Acciones</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary btn-sm">
+                        Editar domicilio
+                    </a>
+                    <a asp-action="Index" class="btn btn-secondary btn-sm">
+                        Volver al listado
+                    </a>
+                    @if (Model.PedidoId.HasValue)
+                    {
+                        <a asp-controller="Pedidos"
+                           asp-action="Details"
+                           asp-route-id="@Model.PedidoId"
+                           class="btn btn-outline-secondary btn-sm">
+                            Ver pedido
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+
+        @if (Model.DireccionCliente?.Latitud != null && Model.DireccionCliente?.Longitud != null)
+        {
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="mb-2">Mapa de entrega</h5>
+                    <div id="map-detalle-domicilio"
+                         style="height: 260px; border-radius: 10px; border: 2px solid #E53935;"></div>
+                    <small class="text-muted d-block mt-2">
+                        Ubicación aproximada según la dirección registrada.
+                    </small>
+                </div>
+            </div>
+
+            @section Scripts {
+                <script>
+                    var lat = @Model.DireccionCliente.Latitud?.ToString(System.Globalization.CultureInfo.InvariantCulture);
+                    var lng = @Model.DireccionCliente.Longitud?.ToString(System.Globalization.CultureInfo.InvariantCulture);
+
+                    if (lat && lng) {
+                        var map = L.map('map-detalle-domicilio').setView([lat, lng], 15);
+
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            maxZoom: 19,
+                        }).addTo(map);
+
+                        L.marker([lat, lng]).addTo(map)
+                            .bindPopup("@(Model.DireccionCliente.Barrio) - @(Model.DireccionCliente.Calle) @(Model.DireccionCliente.Numero)")
+                            .openPopup();
+                    }
+                </script>
+            }
+        }
+    </div>
+</div>

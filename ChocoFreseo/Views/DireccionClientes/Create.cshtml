@@ -1,0 +1,137 @@
+﻿@model ChocoFreseo.Models.Domain.DireccionCliente
+
+@{
+    ViewData["Title"] = "Nueva dirección";
+}
+
+<div class="row">
+    <div class="col-12 col-lg-6 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="mb-1">Nueva dirección</h2>
+                <p class="text-muted mb-3">
+                    Registra una dirección para el cliente. Esta información se usará para los domicilios.
+                </p>
+
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="All" class="text-danger mb-2"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="ClienteId" class="form-label">Cliente</label>
+                        <select asp-for="ClienteId" class="form-select" asp-items="ViewBag.ClienteId">
+                            <option value="">-- Selecciona un cliente --</option>
+                        </select>
+                        <span asp-validation-for="ClienteId" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Barrio" class="form-label">Barrio</label>
+                        <input asp-for="Barrio" class="form-control" />
+                        <span asp-validation-for="Barrio" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Calle" class="form-label">Calle / Vía</label>
+                        <input asp-for="Calle" class="form-control" />
+                        <span asp-validation-for="Calle" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Numero" class="form-label">Número</label>
+                        <input asp-for="Numero" class="form-control" />
+                        <span asp-validation-for="Numero" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Referencia" class="form-label">Referencia adicional</label>
+                        <textarea asp-for="Referencia" class="form-control" rows="2"
+                                  placeholder="Punto de referencia, piso, color de puerta, etc."></textarea>
+                        <span asp-validation-for="Referencia" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" asp-for="EsPrincipal" />
+                        <label class="form-check-label" asp-for="EsPrincipal">
+                            Usar como dirección principal del cliente
+                        </label>
+                    </div>
+
+                    @* Campos ocultos para coordenadas *@
+                    <input type="hidden" asp-for="Latitud" id="Latitud" />
+                    <input type="hidden" asp-for="Longitud" id="Longitud" />
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            Guardar dirección
+                        </button>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            Volver al listado
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Columna del mapa -->
+    <div class="col-12 col-lg-6 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="mb-2">Ubicación en el mapa</h5>
+                <p class="text-muted mb-2">
+                    Haz clic en el mapa para marcar la ubicación aproximada de la dirección del cliente.
+                </p>
+                <div id="map-direccion" style="height: 360px; border-radius: 10px; border: 2px solid #E53935;"></div>
+                <small class="text-muted d-block mt-2">
+                    Las coordenadas se guardan automáticamente al hacer clic en el mapa.
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Centro inicial del mapa: ajusta a tu ciudad
+        var defaultLat = 3.4516;   // Ejemplo: Cali
+        var defaultLng = -76.5320; // Ejemplo: Cali
+
+        // Valores del modelo si vienen
+        var modelLat = @((Model?.Latitud ?? 0).ToString(System.Globalization.CultureInfo.InvariantCulture));
+        var modelLng = @((Model?.Longitud ?? 0).ToString(System.Globalization.CultureInfo.InvariantCulture));
+
+        var lat = modelLat != 0 ? modelLat : defaultLat;
+        var lng = modelLng != 0 ? modelLng : defaultLng;
+
+        var map = L.map('map-direccion').setView([lat, lng], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        var marker = null;
+
+        function setMarkerAndInputs(latlng) {
+            if (marker) {
+                marker.setLatLng(latlng);
+            } else {
+                marker = L.marker(latlng).addTo(map);
+            }
+
+            document.getElementById("Latitud").value = latlng.lat.toString().replace(',', '.');
+            document.getElementById("Longitud").value = latlng.lng.toString().replace(',', '.');
+        }
+
+        map.on('click', function (e) {
+            setMarkerAndInputs(e.latlng);
+        });
+
+        if (modelLat != 0 && modelLng != 0) {
+            setMarkerAndInputs({ lat: modelLat, lng: modelLng });
+        }
+    </script>
+}

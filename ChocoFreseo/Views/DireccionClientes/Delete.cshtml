@@ -1,0 +1,53 @@
+﻿@model ChocoFreseo.Models.Domain.DireccionCliente
+
+@{
+    ViewData["Title"] = "Eliminar dirección";
+}
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <div class="card border-danger">
+            <div class="card-body">
+                <h2 class="text-danger">Eliminar dirección</h2>
+                <p class="text-muted">
+                    ¿Estás seguro de que deseas eliminar esta dirección? Esta acción no se puede deshacer.
+                </p>
+
+                <dl class="row mb-3">
+                    <dt class="col-sm-4">Cliente</dt>
+                    <dd class="col-sm-8">@Model.Cliente?.NombreCompleto</dd>
+
+                    <dt class="col-sm-4">Dirección</dt>
+                    <dd class="col-sm-8">
+                        @Model.Barrio - @Model.Calle @Model.Numero
+                    </dd>
+
+                    <dt class="col-sm-4">Referencia</dt>
+                    <dd class="col-sm-8">@Model.Referencia</dd>
+
+                    <dt class="col-sm-4">Principal</dt>
+                    <dd class="col-sm-8">
+                        @if (Model.EsPrincipal)
+                        {
+                            <span class="badge bg-success">Principal</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Secundaria</span>
+                        }
+                    </dd>
+                </dl>
+
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <button type="submit" class="btn btn-danger">
+                        Sí, eliminar
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary ms-2">
+                        Cancelar
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

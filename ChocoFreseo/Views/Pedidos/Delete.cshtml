@@ -1,0 +1,44 @@
+﻿@model ChocoFreseo.Models.Domain.Pedido
+
+@{
+    ViewData["Title"] = "Eliminar pedido";
+}
+
+<div class="row">
+    <div class="col-md-7">
+        <div class="card border-danger">
+            <div class="card-body">
+                <h2 class="text-danger">Eliminar pedido</h2>
+                <p class="text-muted">
+                    ¿Estás seguro de que deseas eliminar este pedido? Esta acción no se puede deshacer.
+                </p>
+
+                <dl class="row mb-3">
+                    <dt class="col-sm-3">Cliente</dt>
+                    <dd class="col-sm-9">@Model.Cliente?.NombreCompleto</dd>
+
+                    <dt class="col-sm-3">Fecha</dt>
+                    <dd class="col-sm-9">@Model.FechaPedido.ToString("g")</dd>
+
+                    <dt class="col-sm-3">Total</dt>
+                    <dd class="col-sm-9">@Model.Total.ToString("C")</dd>
+
+                    <dt class="col-sm-3">Estado</dt>
+                    <dd class="col-sm-9">@Model.EstadoPedido</dd>
+
+                    <dt class="col-sm-3">Método pago</dt>
+                    <dd class="col-sm-9">@Model.MetodoPago</dd>
+
+                    <dt class="col-sm-3">Observaciones</dt>
+                    <dd class="col-sm-9">@Model.Observaciones</dd>
+                </dl>
+
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+                    <a asp-action="Index" class="btn btn-secondary ms-2">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

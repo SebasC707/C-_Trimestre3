@@ -1,0 +1,43 @@
+﻿@model ChocoFreseo.Models.Domain.ZonaEntrega
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>ZonaEntrega</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NombreZona" class="control-label"></label>
+                <input asp-for="NombreZona" class="form-control" />
+                <span asp-validation-for="NombreZona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CostoDomicilioBase" class="control-label"></label>
+                <input asp-for="CostoDomicilioBase" class="form-control" />
+                <span asp-validation-for="CostoDomicilioBase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TiempoEstimadoMinutos" class="control-label"></label>
+                <input asp-for="TiempoEstimadoMinutos" class="form-control" />
+                <span asp-validation-for="TiempoEstimadoMinutos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,798 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\controllers\\repartidorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\controllers\\repartidorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\controllers\\domicilioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\controllers\\domicilioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\controllers\\direccionclientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\controllers\\direccionclientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\domicilios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\domicilios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\domicilios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\domicilios\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\domicilios\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\domicilios\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\domicilios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\domicilios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\productos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\productos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\productos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\productos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\models\\domain\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\models\\domain\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\pedidos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\pedidos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\pedidos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\pedidos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\pedidos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\pedidos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\pedidos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\pedidos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\domicilios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\domicilios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\direccionclientes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\direccionclientes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\direccionclientes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\direccionclientes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\direccionclientes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\direccionclientes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\direccionclientes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\direccionclientes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\views\\direccionclientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\views\\direccionclientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\models\\domain\\direccioncliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\models\\domain\\direccioncliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\models\\viewmodels\\domiciliocreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\models\\viewmodels\\domiciliocreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\controllers\\zonaentregascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\controllers\\zonaentregascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\migrations\\20251208234633_initialfixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\migrations\\20251208234633_initialfixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\chocofreseo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\chocofreseo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Migrations\\20251208234134_InitialFixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChocoFreseo\\Migrations\\20251208234134_InitialFixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\models\\domain\\domicilio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\models\\domain\\domicilio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\data\\chocofreseodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\data\\chocofreseodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\models\\domain\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\models\\domain\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\models\\domain\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\models\\domain\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\models\\domain\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\models\\domain\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\models\\domain\\zonaentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\models\\domain\\zonaentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\models\\domain\\repartidor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\models\\domain\\repartidor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\models\\domain\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\models\\domain\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|c:\\users\\mateo\\source\\repos\\chocofreseo\\chocofreseo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2ED9CBA3-D2D8-B48A-7F0A-554C88CB3038}|ChocoFreseo\\ChocoFreseo.csproj|solutionrelative:chocofreseo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:30:52.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T02:30:51.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ChocoFreseo\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:30:36.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ChocoFreseo\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ChocoFreseo\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAIMAAABAMzMzMzMrwIYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-09T00:11:08.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DireccionClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\DireccionClientesController.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Controllers\\DireccionClientesController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\DireccionClientesController.cs",
+              "RelativeToolTip": "ChocoFreseo\\Controllers\\DireccionClientesController.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAmwJQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:57:55.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DomiciliosController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\DomiciliosController.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Controllers\\DomiciliosController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\DomiciliosController.cs",
+              "RelativeToolTip": "ChocoFreseo\\Controllers\\DomiciliosController.cs",
+              "ViewState": "AgIAAGUBAAAAAAAAAAAAwH4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T00:08:15.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T00:13:04.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RepartidorsController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\RepartidorsController.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Controllers\\RepartidorsController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\RepartidorsController.cs",
+              "RelativeToolTip": "ChocoFreseo\\Controllers\\RepartidorsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T00:02:57.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Domicilios\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Domicilios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Domicilios\\Index.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Domicilios\\Index.cshtml",
+              "ViewState": "AgIAAGsAAABAYWZmZmYkwHcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T00:09:04.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Productos\\Details.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Productos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Productos\\Details.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Productos\\Details.cshtml",
+              "ViewState": "AgIAAAwAAABgZmZmZmYkwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:26:29.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Domicilios\\Details.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Domicilios\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Domicilios\\Details.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Domicilios\\Details.cshtml",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAAwLkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:48:05.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Domicilios\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Domicilios\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Domicilios\\Delete.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Domicilios\\Delete.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:48:56.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Domicilios\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Domicilios\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Domicilios\\Edit.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Domicilios\\Edit.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAwI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:48:40.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Productos\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Productos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Productos\\Index.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Productos\\Index.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:26:39.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Productos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Productos\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Productos\\Delete.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Productos\\Delete.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:26:24.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Productos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Productos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Productos\\Edit.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Productos\\Edit.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:26:34.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Productos\\Create.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Productos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Productos\\Create.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Productos\\Create.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:26:20.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Pedidos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Pedidos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Pedidos\\Edit.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Pedidos\\Edit.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:18:53.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Pedido.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Models\\Domain\\Pedido.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Pedido.cs",
+              "RelativeToolTip": "ChocoFreseo\\Models\\Domain\\Pedido.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAzwBoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:58:56.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Pedidos\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Pedidos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Pedidos\\Index.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Pedidos\\Index.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAwLIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:18:57.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Pedidos\\Details.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Pedidos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Pedidos\\Details.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Pedidos\\Details.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:16:01.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Pedidos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Pedidos\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Pedidos\\Delete.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Pedidos\\Delete.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T01:15:56.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Pedidos\\Create.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Pedidos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Pedidos\\Create.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Pedidos\\Create.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T00:57:51.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Domicilios\\Create.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\Domicilios\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\Domicilios\\Create.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\Domicilios\\Create.cshtml",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAAwNcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T00:12:22.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\DireccionClientes\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\DireccionClientes\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\DireccionClientes\\Delete.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\DireccionClientes\\Delete.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T00:59:43.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\DireccionClientes\\Details.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\DireccionClientes\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\DireccionClientes\\Details.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\DireccionClientes\\Details.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T00:59:47.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\DireccionClientes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\DireccionClientes\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\DireccionClientes\\Edit.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\DireccionClientes\\Edit.cshtml",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAwIQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T00:59:51.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\DireccionClientes\\Create.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\DireccionClientes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\DireccionClientes\\Create.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\DireccionClientes\\Create.cshtml",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAAwIkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T00:18:06.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\DireccionClientes\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Views\\DireccionClientes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Views\\DireccionClientes\\Index.cshtml",
+              "RelativeToolTip": "ChocoFreseo\\Views\\DireccionClientes\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T00:59:55.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PedidosController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\PedidosController.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Controllers\\PedidosController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\PedidosController.cs",
+              "RelativeToolTip": "ChocoFreseo\\Controllers\\PedidosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T00:32:48.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DireccionCliente.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\DireccionCliente.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Models\\Domain\\DireccionCliente.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\DireccionCliente.cs",
+              "RelativeToolTip": "ChocoFreseo\\Models\\Domain\\DireccionCliente.cs",
+              "ViewState": "AgIAABIAAAAA0szMzMzsvxwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:58:16.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DomicilioCreateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\ViewModels\\DomicilioCreateViewModel.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Models\\ViewModels\\DomicilioCreateViewModel.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\ViewModels\\DomicilioCreateViewModel.cs",
+              "RelativeToolTip": "ChocoFreseo\\Models\\ViewModels\\DomicilioCreateViewModel.cs",
+              "ViewState": "AgIAAAUAAADAzMzMzMwnwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T00:07:49.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ZonaEntregasController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\ZonaEntregasController.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Controllers\\ZonaEntregasController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\ZonaEntregasController.cs",
+              "RelativeToolTip": "ChocoFreseo\\Controllers\\ZonaEntregasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:58:35.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "ChocoFreseo\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:54:08.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "ChocoFreseo\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:50:49.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20251208234633_InitialFixed.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Migrations\\20251208234633_InitialFixed.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Migrations\\20251208234633_InitialFixed.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Migrations\\20251208234633_InitialFixed.cs",
+              "RelativeToolTip": "ChocoFreseo\\Migrations\\20251208234633_InitialFixed.cs",
+              "ViewState": "AgIAAJgAAAAA/P////8hwNgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:46:40.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Domicilio.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Domicilio.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Models\\Domain\\Domicilio.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Domicilio.cs",
+              "RelativeToolTip": "ChocoFreseo\\Models\\Domain\\Domicilio.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwB0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:10:13.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ChocoFreseoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Data\\ChocoFreseoDbContext.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Data\\ChocoFreseoDbContext.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Data\\ChocoFreseoDbContext.cs",
+              "RelativeToolTip": "ChocoFreseo\\Data\\ChocoFreseoDbContext.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAqwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:56:13.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Program.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Program.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Program.cs",
+              "RelativeToolTip": "ChocoFreseo\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:56:30.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ChocoFreseo.csproj",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\ChocoFreseo.csproj",
+              "RelativeDocumentMoniker": "ChocoFreseo\\ChocoFreseo.csproj",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\ChocoFreseo.csproj",
+              "RelativeToolTip": "ChocoFreseo\\ChocoFreseo.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-08T23:14:57.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20251208234134_InitialFixed.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Migrations\\20251208234134_InitialFixed.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Migrations\\20251208234134_InitialFixed.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Migrations\\20251208234134_InitialFixed.cs",
+              "RelativeToolTip": "ChocoFreseo\\Migrations\\20251208234134_InitialFixed.cs",
+              "ViewState": "AgIAAAABAAAAAAAAAAAqwBIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:41:37.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Cliente.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Models\\Domain\\Cliente.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Cliente.cs",
+              "RelativeToolTip": "ChocoFreseo\\Models\\Domain\\Cliente.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:57:51.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DetallePedido.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\DetallePedido.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Models\\Domain\\DetallePedido.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\DetallePedido.cs",
+              "RelativeToolTip": "ChocoFreseo\\Models\\Domain\\DetallePedido.cs",
+              "ViewState": "AgIAAAMAAAD6MjMzMzMrwBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:00:43.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Enums.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Models\\Domain\\Enums.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Enums.cs",
+              "RelativeToolTip": "ChocoFreseo\\Models\\Domain\\Enums.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:57:13.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ZonaEntrega.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\ZonaEntrega.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Models\\Domain\\ZonaEntrega.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\ZonaEntrega.cs",
+              "RelativeToolTip": "ChocoFreseo\\Models\\Domain\\ZonaEntrega.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:09:39.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Repartidor.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Repartidor.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Models\\Domain\\Repartidor.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Repartidor.cs",
+              "RelativeToolTip": "ChocoFreseo\\Models\\Domain\\Repartidor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:01:11.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Producto.cs",
+              "RelativeDocumentMoniker": "ChocoFreseo\\Models\\Domain\\Producto.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\Models\\Domain\\Producto.cs",
+              "RelativeToolTip": "ChocoFreseo\\Models\\Domain\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:58:39.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\appsettings.json",
+              "RelativeDocumentMoniker": "ChocoFreseo\\appsettings.json",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\ChocoFreseo\\ChocoFreseo\\appsettings.json",
+              "RelativeToolTip": "ChocoFreseo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-08T22:55:13.019Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

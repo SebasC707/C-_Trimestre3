@@ -1,0 +1,140 @@
+﻿@using ChocoFreseo.Models.Domain
+@model IEnumerable<Domicilio>
+
+@{
+    ViewData["Title"] = "Domicilios";
+
+    int total = Model?.Count() ?? 0;
+    int pendientes = Model?.Count(d => d.EstadoDomicilio == EstadoDomicilio.Pendiente) ?? 0;
+    int enCamino = Model?.Count(d => d.EstadoDomicilio == EstadoDomicilio.EnRuta) ?? 0;
+    int entregados = Model?.Count(d => d.EstadoDomicilio == EstadoDomicilio.Entregado) ?? 0;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+        <h1 class="mb-0">Domicilios</h1>
+        <p class="text-muted mb-0">Control de entregas desde ChocoFreseo.</p>
+    </div>
+</div>
+
+<!-- Tarjetas de resumen -->
+<div class="row mb-3">
+    <div class="col-6 col-md-3 mb-2">
+        <div class="card text-center">
+            <div class="card-body py-2">
+                <div class="text-muted small">Total</div>
+                <div class="fs-4 fw-bold">@total</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3 mb-2">
+        <div class="card text-center border-warning">
+            <div class="card-body py-2">
+                <div class="text-muted small">Pendientes</div>
+                <div class="fs-4 fw-bold text-warning">@pendientes</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3 mb-2">
+        <div class="card text-center border-info">
+            <div class="card-body py-2">
+                <div class="text-muted small">En camino</div>
+                <div class="fs-4 fw-bold text-info">@enCamino</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3 mb-2">
+        <div class="card text-center border-success">
+            <div class="card-body py-2">
+                <div class="text-muted small">Entregados</div>
+                <div class="fs-4 fw-bold text-success">@entregados</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body p-0">
+        <table class="table mb-0 align-middle">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Pedido</th>
+                    <th>Cliente</th>
+                    <th>Dirección</th>
+                    <th>Zona</th>
+                    <th>Repartidor</th>
+                    <th>Estado</th>
+                    <th>Hora solicitud</th>
+                    <th>Costo</th>
+                    <th>Propina</th>
+                    <th class="text-end">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    var i = 1;
+                    foreach (var d in Model)
+                    {
+                        <tr>
+                            <td>@i</td>
+                            <td>@d.PedidoId</td>
+                            <td>@d.Pedido?.Cliente?.NombreCompleto</td>
+                            <td>
+                                @if (d.DireccionCliente != null)
+                                {
+                                    @($"{d.DireccionCliente.Barrio} - {d.DireccionCliente.Calle} {d.DireccionCliente.Numero}")
+                                }
+                            </td>
+                            <td>@d.ZonaEntrega?.NombreZona</td>
+                            <td>@d.Repartidor?.NombreCompleto</td>
+                            <td>
+                                @switch (d.EstadoDomicilio)
+                                {
+                                    case EstadoDomicilio.Pendiente:
+                                        @:<span class="badge bg-warning text-dark">Pendiente</span>
+                                        break;
+                                    case EstadoDomicilio.EnRuta:
+                                        @:<span class="badge bg-info text-dark">En camino</span>
+                                        break;
+                                    case EstadoDomicilio.Entregado:
+                                        @:<span class="badge bg-success">Entregado</span>
+                                        break;
+                                    default:
+                                        @:<span class="badge bg-secondary">@d.EstadoDomicilio</span>
+                                        break;
+                                }
+                            </td>
+                            <td>@d.HoraSolicitud.ToString("g")</td>
+                            <td>@d.CostoDomicilio.ToString("C")</td>
+                            <td>@(d.Propina?.ToString("C") ?? "-")</td>
+                            <td class="text-end">
+                                <div class="btn-group btn-group-sm" role="group">
+                                    <a asp-action="Details" asp-route-id="@d.Id" class="btn btn-outline-secondary">
+                                        Detalles
+                                    </a>
+                                    <a asp-action="Edit" asp-route-id="@d.Id" class="btn btn-outline-primary">
+                                        Editar
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@d.Id" class="btn btn-outline-danger">
+                                        Eliminar
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        i++;
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="11" class="text-center py-3 text-muted">
+                            No hay domicilios registrados todavía.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
